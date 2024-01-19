@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './app.css'
+import './App.css'
 import SingleProduct from './pages/SingleProduct'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 

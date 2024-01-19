@@ -3,7 +3,7 @@ import { formatPrice } from '../utils';
 
 const BarraComValor = ({valor, corDeFundo}) => {
     return (
-        <div className='d-flex ms-3'>
+        <div className='d-flex'>
             <div
         style={{
             background: corDeFundo,

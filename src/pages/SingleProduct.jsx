@@ -52,8 +52,8 @@ const SingleProduct = () => {
             <div className="container">
                 <div className="d-flex flex-column flex-md-row justify-content-around mt-4 flex-column">
                     <div className="col-md-4 col-sm-4 col" >
-                        <div className="display">
-                            <div>
+                        <div className="d-flex flex-column m-auto">
+                            <div className="col" >
                             <img className="images_destaque" src={currentImage} alt="Carta_Counterspell" />
                             
                             </div>
@@ -70,18 +70,18 @@ const SingleProduct = () => {
                         <div className="main_content">
                             <div className="card-info">
                                 <header >
-                                    <div className="breadcrumbs">
-                                        <ul className="d-flex flex-md-row justify-content-start" >
-                                            <li>
-                                                <Link to="/" >Home</Link> |
+                                    <div className="breadcrumbs ">
+                                        <ul className="d-flex flex-md-row justify-content-start col-12 m-auto" >
+                                            <li >
+                                                <Link to="/" >Home</Link> <span>|</span>
                                             </li>
-                                            <li>
-                                                <Link to="/" >Magic: The Gathering</Link> |
+                                            <li >
+                                                <Link to="/" >Magic: The Gathering</Link> <span>|</span>
                                             </li>
-                                            <li>
-                                                <Link to="/" >Busca</Link> |
+                                            <li >
+                                                <Link to="/" >Busca</Link> <span>|</span>
                                             </li>
-                                            <li>
+                                            <li >
                                                 <Link to="/" >Bazar - Lista de Desejo</Link> 
                                             </li>
                                         </ul>
@@ -182,14 +182,16 @@ const SingleProduct = () => {
                                         <Link to="/" className="link-red" >Ver Tudo</Link>
                                     </div>
                                 </div>
-                                <div className="bg-gray d-flex justify-content-between p-4 flex-md-row">
-                                    <div className="col" >
+                                <div className="bg-gray d-flex justify-content-between p-4 flex-md-row flex-column">
+                                    <div className="main_icon d-flex flex-row" >
                                         <img src={Icon} alt="icon" />
                                         <span className="ms-3" >Normal</span>
                                     </div>
                                     <div className="d-flex" >
                                         <BarraComValor valor={6.28} corDeFundo="#4CAF50" />
+                                        &#x000A0;&#x000A0;&#x000A0;
                                         <BarraComValor valor={9.39} corDeFundo="#DDC80B" />
+                                        &#x000A0;&#x000A0;&#x000A0;
                                         <BarraComValor valor={14} corDeFundo="#FF8B64" />
                                     </div>
                                 </div>

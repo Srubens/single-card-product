@@ -10,6 +10,8 @@ import card2 from '../assets/Card_Carroussel-2.png'
 // import card3 from '../assets/Card_Carroussel.png'
 import {RenderComponent,BarraComValor, SubmitBtn, IconCustoMan} from "../components";
 import {toast} from 'react-toastify'
+import Icon from '../assets/Icon.png'
+import iconC from '../assets/icon-c.png'
 
 
 const SingleProduct = () => {
@@ -88,7 +90,7 @@ const SingleProduct = () => {
                                 <div className="card_main_select mt-4">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div>
-                                        <img src="/src/assets/icon-c.png" alt="icon-c" /> <b>#045</b> Dominaria Remastered
+                                        <img src={iconC} alt="icon-c" /> <b>#045</b> Dominaria Remastered
                                         </div>
                                         <div>|
                                         <select value={amount} name="select-card" id="select-card" onChange={handleAmount} >
@@ -182,7 +184,7 @@ const SingleProduct = () => {
                                 </div>
                                 <div className="bg-gray d-flex justify-content-between p-4 flex-md-row">
                                     <div className="col" >
-                                        <img src="/src/assets/Icon.png" alt="icon" />
+                                        <img src={Icon} alt="icon" />
                                         <span className="ms-3" >Normal</span>
                                     </div>
                                     <div className="d-flex" >

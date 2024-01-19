@@ -1,6 +1,8 @@
+import iconM from '../assets/M.png'
+
 const IconCustMan = () => {
     return (
-        <img src="/src/assets/M.png" alt="icon M" />
+        <img src={iconM} alt="icon M" />
     );
 }
  
